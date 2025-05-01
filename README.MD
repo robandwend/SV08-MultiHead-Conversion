@@ -12,7 +12,7 @@ For an initial intro here's a quick video I did to show the mount. https://www.y
 
 The top 2020 extrusion has pre-built supports. Due to it's lenght and the small bolt holes, please ensure you compensate for any shrinkage when printing - size accuracy is key.
 
-The bottom 2020 support pieces also have a hole printing guide. You can either drill and tap, or drill and place a small nut behind the hole to attach.
+The bottom 2020 support pieces also have a hole printing guide. You MUST drill and tap, the bolt must NOT extend into the rear channel, since it would collide with the Z-Axis.
 
 The head cover has built in supports for the clips, but may need manual supports on the front left/right indent area (depending on how well your bridging works.
 
