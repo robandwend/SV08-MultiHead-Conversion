@@ -12,7 +12,7 @@ For an initial intro here's a quick video I did to show the mount. https://www.y
 
 ## ModularDock
 
-![Components](photos/x1.jpg)
+![Components](photos/x1.jpg){height=160}
 
 The head mount is based on using the modulardock From https://github.com/DraftShift/ModularDock 
 
