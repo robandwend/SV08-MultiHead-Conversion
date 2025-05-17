@@ -12,7 +12,8 @@ For an initial intro here's a quick video I did to show the mount. https://www.y
 
 ## ModularDock
 
-![Components](photos/x1.jpg){height=160}
+![Components](photos/x1 (Phone).jpg)
+
 
 The head mount is based on using the modulardock From https://github.com/DraftShift/ModularDock 
 
@@ -22,20 +23,20 @@ Specifically using these Components
 
 The rear components for the SV08 modular dock can be found in the stl's folder.
 
-![Components](photos/stealthchangercomponentsused.jpg)
+![Components](photos/stealthchangercomponentsused (Phone).jpg)
 
 ## Stealthchanger 
 
-![Components](photos/IMG_4160.JPG)
+![Components](photos/IMG_4160 (Phone).JPG)
 
 Follow the stealthchanger information found here - https://github.com/DraftShift/StealthChanger
 
-![Components](photos/IMG_4158.JPG)
-![Components](photos/IMG_4159.JPG)
-![Components](photos/IMG_4161.JPG)
-![Components](photos/IMG_4162.JPG)
-![Components](photos/IMG_4164.JPG)
-![Components](photos/IMG_4165.JPG)
+![Components](photos/IMG_4158 (Phone).JPG)
+![Components](photos/IMG_4159 (Phone).JPG)
+![Components](photos/IMG_4161 (Phone).JPG)
+![Components](photos/IMG_4162 (Phone).JPG)
+![Components](photos/IMG_4164 (Phone).JPG)
+![Components](photos/IMG_4165 (Phone).JPG)
 
 ## Supports for docks
 
@@ -43,25 +44,25 @@ Follow the stealthchanger information found here - https://github.com/DraftShift
 
 The top 2020 extrusion has pre-built supports. Due to it's lenght and the small bolt holes, please ensure you compensate for any shrinkage when printing - size accuracy is key.
 
-![Components](photos/IMG_4134.JPG)
+![Components](photos/IMG_4134 (Phone).JPG)
 
 I've added a wave to the supports to try to assist with warping when printing in ABS/ASA
 
-![Components](photos/x2.jpg)
+![Components](photos/x2 (Phone).jpg)
 
 The print has supports built in, which will need snapping off after printing...
 
-![Components](photos/IMG_4135.JPG)
+![Components](photos/IMG_4135 (Phone).JPG)
 
 The light will need relocating (the screw holes can be used in attaching the 2020). I used some standard voron type tape to attach as shown.
 
-![Components](photos/IMG_4137.JPG)
+![Components](photos/IMG_4137 (Phone).JPG)
 
 ### Lower 2020
 
 The bottom 2020 support pieces also have a hole printing guide. You MUST drill and tap, the bolt must NOT extend into the rear channel, since it would collide with the Z-Axis.
 
-![Components](photos/IMG_4150.JPG)
+![Components](photos/IMG_4150 (Phone).JPG)
 
 
 
@@ -76,21 +77,27 @@ I used this supply https://www.amazon.com.au/dp/B0CN1JVD4Y?ref=ppx_yo2ov_dt_b_fe
 
 And these mounts https://www.printables.com/model/1047201-sovol-sv08-power-supply-upgrade-mounting-parts
 
-![Components](photos/IMG_4156.JPG)
+![Components](photos/IMG_4156 (Phone).JPG)
+
+## Wiring General
+
+I followed the method used by Teaching Tech (https://youtu.be/OFGBXBn_xqs?t=1077) using a birds-nest https://github.com/xbst/Birds-Nest here's a handy clip from Teaching-Tech's video.
+
+![Components](photos/birdsnestwiring (Phone).jpg)
 
 ## Rear fan
 
 The rear fan is moved to allow undocking of the head. Simply removed the fan and replace the mount with the new one. 
 
-![Components](photos/IMG_4157.JPG)
-![Components](photos/IMG_4158.JPG)
-![Components](photos/IMG_4161.JPG)
-![Components](photos/IMG_4167.JPG)
+![Components](photos/IMG_4157 (Phone).JPG)
+![Components](photos/IMG_4158 (Phone).JPG)
+![Components](photos/IMG_4161 (Phone).JPG)
+![Components](photos/IMG_4167 (Phone).JPG)
 
 Note that this is fastened in the same holes, but from the front of the back plate rather than the back. 8mm M3 bolts will be needed.
 To fasten the fan back on to the mount, either use the original bolts, or I have found using a 5mm M2.5 bolts gives a stronger fitting.
 
-![Components](photos/IMG_4168.JPG)
+![Components](photos/IMG_4168 (Phone).JPG)
 
 
 ## Head cover
@@ -98,8 +105,8 @@ To fasten the fan back on to the mount, either use the original bolts, or I have
 The design relies on this printed replacement head cover, which has additional rear clips, longer magnets, and 3 front magnets which attach to the dock. It also has additional cutouts to allow for the moved rear fan.
 
 
-![Components](photos/IMG_4129.JPG)
-![Components](photos/IMG_4160.JPG)
+![Components](photos/IMG_4129 (Phone).JPG)
+![Components](photos/IMG_4160 (Phone).JPG)
 
 
 
@@ -107,6 +114,32 @@ The design relies on this printed replacement head cover, which has additional r
 
 The SV08 stealthchanger mount moves the head up 15mm and slightly forward. It will require raising.
 
-Print 6 of the SHIMS in the STL directory.
 
-Remove the 6 bolts holding the bed down and replace with 40 or 45 mm bolts. Lift the bed slightly and slip in a shim as you replace the bolts. I found I could do this without disconnecting the bed wiring as there was enough slack. However it's worth re-checking the wiring once everything is back together.
+The bed shims require M4 thread inserts.
+
+![Components](photos/BedReposition (Phone).JPG)
+![Components](photos/bed7 (Phone).JPG)
+
+
+Remove the bed, insert the shims as below (it may be a tight fit) use the 6 original bed screws to fasten the shims. Use 6 new M4 screws to fasten down the bed in it's new position.
+Re-wire the bed.
+
+![Components](photos/bed8 (Phone).JPG)
+![Components](photos/bed9 (Phone).JPG)
+
+## Sexball / SexBolt
+
+To allow for automated x-y-z calibration between the heads (https://github.com/viesturz/klipper-toolchanger/blob/main/tools_calibrate.md) I'm using a Sexball (https://github.com/DraftShift/StealthChanger/wiki/Bill-of-Materials#sexball-probe) which is based on the Sexbolt (https://mods.vorondesign.com/details/t1DBVlcUBbdEK6habEsVzg)
+
+This allows the tools_calibrate macro (https://github.com/viesturz/klipper-toolchanger/blob/main/tools_calibrate.md) to be used to align all the heads.
+	
+	
+## TOPHAT
+
+Based from Nadir's top hat (https://www.printables.com/model/865851-sovol-sv08-top-hat), I designed a tall version with clear panels and a magnetic rear access cover for the cabling.
+
+Here you see the tophat with all it's parts colour seperated. 
+
+![Components](photos/tophat1 (Phone).JPG)
+![Components](photos/tophat2 (Phone).JPG)
+
