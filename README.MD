@@ -143,3 +143,37 @@ Here you see the tophat with all it's parts colour seperated.
 ![Components](photos/tophat1-phone.JPG)
 ![Components](photos/tophat2-phone.JPG)
 
+## RUNOUT DETECTOR
+
+I've added a simple inline runout detector based on https://www.printables.com/model/1084240-sovol-sv08-runout-sensor-on-head 
+My version is here https://www.printables.com/model/1299711-generic-inline-runout-detector
+
+Note it uses a 5.5mm ball (original used 5mm).
+
+![Components](photos/IMG_4199.JPG)
+
+Here you can see the wiring for the DETECTOR
+
+![Components](photos/IMG_4200.JPG)
+
+## REAR ROCKER
+
+Here's a simple rocker to allow the SV08 to be moved to it's back without squashing any cables at the rear.
+
+The bottom part can use the original bolts since they appear to have plenty of spare length.
+
+The top two bolts (holding in the panels) need replacing with 8mm m3's
+
+![Components](photos/IMG_4236.JPG)
+![Components](photos/IMG_4237.JPG)
+![Components](photos/IMG_4239.JPG)
+
+## BASE cover
+
+Here's a simple cover to replace the stock metal one (still using the original fan) - I was not a fan of the original.
+
+This will require a 36mm M3 bolt and an M3 2020 T-nut
+
+![Components](photos/IMG_4230.JPG)
+
+
