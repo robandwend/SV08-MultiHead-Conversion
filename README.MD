@@ -6,16 +6,19 @@ I'm currently converting my SV08 to a multi-toolhead printer. I'm keeping the co
 
 This repo contains the files designs I've used for mounting on the SV08.
 
-For full build overview on a SV08, I suggest watching Teaching Tech's series on doing the conversion. At this time he's not yet finished, and hasn't published any of the cad work - hence me re-inventing the wheel in this design. https://www.youtube.com/watch?v=G6kc_BnYU8w&t=2s
+For full build overview on a SV08, I suggest watching Teaching Tech's series on doing the conversion. At this time he's not yet finished, and hasn't published any of the cad work - hence me re-inventing the wheel in this design. 
+[video link](https://www.youtube.com/watch?v=G6kc_BnYU8w&t=2s)
 
-For an initial intro here's a quick video I did to show the mount. https://www.youtube.com/watch?v=clDU7j5NY64
+For an initial intro here's a quick video I did to show the mount. 
+[video link](https://www.youtube.com/watch?v=clDU7j5NY64)
 
 ## ModularDock
 
 ![Components](photos/x1-phone.jpg)
 
 
-The head mount is based on using the modulardock From https://github.com/DraftShift/ModularDock 
+The head mount is based on using the modulardock From 
+[here](https://github.com/DraftShift/ModularDock)
 
 Specifically using these Components
 - FrameShort
@@ -29,7 +32,8 @@ The rear components for the SV08 modular dock can be found in the stl's folder.
 
 ![Components](photos/IMG_4160-phone.JPG)
 
-Follow the stealthchanger information found here - https://github.com/DraftShift/StealthChanger
+Follow the stealthchanger information found here - 
+[link](https://github.com/DraftShift/StealthChanger)
 
 ![Components](photos/IMG_4158-phone.JPG)
 ![Components](photos/IMG_4159-phone.JPG)
@@ -73,15 +77,21 @@ Magnets - I've replaced the standard 4x3 magnets with 4x6 (or two 4x3) to increa
 
 ## New power supply
 
-I used this supply https://www.amazon.com.au/dp/B0CN1JVD4Y?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1
+I used this supply 
+[supply link](https://www.amazon.com.au/dp/B0CN1JVD4Y?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)
 
-And these mounts https://www.printables.com/model/1047201-sovol-sv08-power-supply-upgrade-mounting-parts
+And these mounts 
+[mounts link](https://www.printables.com/model/1047201-sovol-sv08-power-supply-upgrade-mounting-parts)
 
 ![Components](photos/IMG_4156-phone.JPG)
 
 ## Wiring General
 
-I followed the method used by Teaching Tech (https://youtu.be/OFGBXBn_xqs?t=1077) using a birds-nest https://github.com/xbst/Birds-Nest here's a handy clip from Teaching-Tech's video.
+I followed the method used by Teaching Tech 
+[video link](https://youtu.be/OFGBXBn_xqs?t=1077)
+using a birds-nest 
+[birdsnest link](https://github.com/xbst/Birds-Nest)
+ here's a handy clip from Teaching-Tech's video.
 
 ![Components](photos/birdsnestwiring-phone.jpg)
 
@@ -108,7 +118,15 @@ The design relies on this printed replacement head cover, which has additional r
 ![Components](photos/IMG_4129-phone.JPG)
 ![Components](photos/IMG_4160-phone.JPG)
 
+## Umbilical mount point
 
+To ensure the hotend umbilical could be adjusted to avoid collisions. This extension to the standard wire mount adds a small extension into which the strengthening wire could be mounted.
+
+Note: A small recess should be made into the head-cover to fit this mount point. (I'll change the head-cover design at some point).
+
+![Components](photos/UMBILICALMOUNT1.JPG)
+![Components](photos/UMBILICALMOUNT2.JPG)
+![Components](photos/UMBILICALMOUNT3.JPG)
 
 ## Bed Raise
 
