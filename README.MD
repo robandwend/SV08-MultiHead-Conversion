@@ -147,14 +147,22 @@ Re-wire the bed.
 
 ## Sexball / SexBolt
 
-To allow for automated x-y-z calibration between the heads (https://github.com/viesturz/klipper-toolchanger/blob/main/tools_calibrate.md) I'm using a Sexball (https://github.com/DraftShift/StealthChanger/wiki/Bill-of-Materials#sexball-probe) which is based on the Sexbolt (https://mods.vorondesign.com/details/t1DBVlcUBbdEK6habEsVzg)
+To allow for automated x-y-z calibration between the heads [see this](https://github.com/viesturz/klipper-toolchanger/blob/main/tools_calibrate.md) I'm using a Sexball [sexball](https://github.com/DraftShift/StealthChanger/wiki/Bill-of-Materials#sexball-probe) which is based on the Sexbolt [sexbolt](https://mods.vorondesign.com/details/t1DBVlcUBbdEK6habEsVzg)
 
-This allows the tools_calibrate macro (https://github.com/viesturz/klipper-toolchanger/blob/main/tools_calibrate.md) to be used to align all the heads.
+I reduced the height of the ball by 4mm to make it closer to the bed, by cutting the bar (with an angle grinder). This isn't required, but I felt it looked better.
+
+NOTE: The use of the sexball requires the bed moving forward an extra 5mm - versions of the shim STL's are marked for this change.
+
+This allows the tools_calibrate macro [macros](https://github.com/viesturz/klipper-toolchanger/blob/main/tools_calibrate.md) to be used to align all the heads.
 	
+### TOOL ALIGNMENT
+
+I found these instructions to be the easiest way to align.
+[tool alignment](https://github.com/viesturz/NozzleAlign) - to get the offsets of the tools from the sexball 
 	
 ## TOPHAT
 
-Based from Nadir's top hat (https://www.printables.com/model/865851-sovol-sv08-top-hat), I designed a tall version with clear panels and a magnetic rear access cover for the cabling.
+Based from Nadir's top hat [tophat](https://www.printables.com/model/865851-sovol-sv08-top-hat), I designed a tall version with clear panels and a magnetic rear access cover for the cabling.
 
 Here you see the tophat with all it's parts colour seperated. 
 
@@ -163,8 +171,8 @@ Here you see the tophat with all it's parts colour seperated.
 
 ## RUNOUT DETECTOR
 
-I've added a simple inline runout detector based on https://www.printables.com/model/1084240-sovol-sv08-runout-sensor-on-head 
-My version is here https://www.printables.com/model/1299711-generic-inline-runout-detector
+I've added a simple inline runout detector based on [this]https://www.printables.com/model/1084240-sovol-sv08-runout-sensor-on-head 
+My version is here [my version]https://www.printables.com/model/1299711-generic-inline-runout-detector
 
 Note it uses a 5.5mm ball (original used 5mm).
 
@@ -193,5 +201,4 @@ Here's a simple cover to replace the stock metal one (still using the original f
 This will require a 36mm M3 bolt and an M3 2020 T-nut
 
 ![Components](photos/IMG_4230.JPG)
-
 
