@@ -239,3 +239,8 @@ This will require a 36mm M3 bolt and an M3 2020 T-nut
 ## Gantry Mounted wiper
 
 I've created a modified version of [link] (https://www.printables.com/model/882364-new-version-adjustable-gantry-mounted-nozzle-seal) that has an extended and raised arm to fit this SV08 change. This can be seen in use in some of the videos.
+
+
+## Final Klipper config files
+
+My active klipper config files can all be found [here](https://github.com/robandwend/sv08-klipper)
