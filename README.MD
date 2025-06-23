@@ -159,7 +159,41 @@ This allows the tools_calibrate macro [macros](https://github.com/viesturz/klipp
 
 I found these instructions to be the easiest way to align.
 [tool alignment](https://github.com/viesturz/NozzleAlign) - to get the offsets of the tools from the sexball 
+
+Here's the command sequence I ran:
+> T0\
+> SET_HEATER_TEMPERATURE HEATER=extruder TARGET=200\
+> G28\
+> CLEAN_NOZZLE\
+> MOVE_OVER_PROBE\
+> TOOL_LOCATE_SENSOR     # Sensor location at 281.150000,354.818750,1.853125\
+> SET_HEATER_TEMPERATURE HEATER=extruder TARGET=0\
+
+-- At this point I check the location with that defined in calibration-offsets.cfg, if they are off, then correct them and restart.
+ 
+ 
+> SET_HEATER_TEMPERATURE HEATER=extruder1 TARGET=200\
+> T1                     # Note my load/unload does an auto CLEAN-NOZZLE each time\
+> MOVE_OVER_PROBE\
+> TOOL_CALIBRATE_TOOL_OFFSET           # T1 = Tool offset is -0.662500,-0.031250,-0.290625\
+> SET_HEATER_TEMPERATURE HEATER=extruder1 TARGET=0\
+
+Repeat the above for T2,3,4
+
+_T1 = Tool offset is -0.662500,-0.031250,-0.290625_\
+_T2 = Tool offset is -0.750000,0.300000,0.163125_\
+_T3 = Tool offset is -1.106250,-0.531250,-0.165000_\
 	
+Finally to ensure the belts haven't slipped (eg docking errors) I recheck location of T0...
+
+> SET_HEATER_TEMPERATURE HEATER=extruder TARGET=200\
+> T0\
+> MOVE_OVER_PROBE\
+> TOOL_CALIBRATE_TOOL_OFFSET\
+> SET_HEATER_TEMPERATURE HEATER=extruder TARGET=0\
+
+_Final T0 = _Tool offset is -0.000000,-0.006250,0.037500_  :-) Close enough :-)_
+
 ## TOPHAT
 
 Based from Nadir's top hat [tophat](https://www.printables.com/model/865851-sovol-sv08-top-hat), I designed a tall version with clear panels and a magnetic rear access cover for the cabling.
@@ -202,3 +236,6 @@ This will require a 36mm M3 bolt and an M3 2020 T-nut
 
 ![Components](photos/IMG_4230.JPG)
 
+## Gantry Mounted wiper
+
+I've created a modified version of [link] (https://www.printables.com/model/882364-new-version-adjustable-gantry-mounted-nozzle-seal) that has an extended and raised arm to fit this SV08 change. This can be seen in use in some of the videos.
