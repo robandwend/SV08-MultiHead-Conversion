@@ -1,8 +1,6 @@
 # SOVOL SV08 Multihead Conversion
 
-### THIS IS A WORK IN PROGRESS - CHANGES WILL BE MADE
-
-I'm currently converting my SV08 to a multi-toolhead printer. I'm keeping the costs way down by using the standard SV08 toolheads.
+I've converted g my SV08 to a multi-toolhead printer. I'm keeping the costs way down by using the standard SV08 toolheads.
 
 This repo contains the files designs I've used for mounting on the SV08.
 
