@@ -92,8 +92,11 @@ I followed the method used by Teaching Tech
 using a birds-nest 
 [birdsnest link](https://github.com/xbst/Birds-Nest)
  here's a handy clip from Teaching-Tech's video.
-
 ![Components](photos/birdsnestwiring-phone.jpg)
+
+There's a simple birdnest attachment for the standard birdsnest fannypack_base that allows insertion of strain wires in the STL folder.
+![Components](photos/birdsnest.jpg)
+I bolted this to the rear of the SV08 - having drilled two small holes to bolt into.
 
 ## Rear fan
 
