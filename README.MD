@@ -247,3 +247,79 @@ I've created a modified version of [link] (https://www.printables.com/model/8823
 ## Final Klipper config files
 
 My active klipper config files can all be found [here](https://github.com/robandwend/sv08-klipper)
+
+
+# Over the top options...
+
+As I've continued to tinker with this printer, I've made a few other modifications just for the fun of It
+
+## Bambulab nozzle replacement.
+
+I've used this converter to convert all nozzles to bambulabs. The original nozzles worked fine, but since all my other printers either use natively or have been converted to bambu nozzles, I thought I'd do this SV08 as well.
+
+I've used both these converters
+[link](https://www.printables.com/model/966176-remix-of-stephzics-sovol-sv08-bambu-lab-nozzle-ada)
+[link](https://www.printables.com/model/944360-sovol-sv08-bambulab-clone-hotend-support)
+
+![Components](photos/bambu.jpg)
+![Components](photos/BAM.JPG)
+
+## Extra camera processing
+
+I've moved all camera processing (including new ones listed below) to an additional Raspberry PI 4B (I had it spare).
+This is  running crowsnest to publish the cameras. The original klipper config for the camera's now points their IP's to this additional processor.
+
+![Components](photos/PI.JPG)
+
+
+A mount for this PI is in /stls/extras/
+
+## Nozzle Cam
+
+I've used this nozzle cam (only currently on head0)
+[link](https://www.mintion.net/products/mintion-nozzle-camera?variant=48352784122166)
+
+STL's for the head mount and electronics box are in /stls/extras/
+![nozzlecameramount](photos/nozzlecameramount.jpg)
+
+## Extra Camera's
+
+In addition to the nozzle camera, I've added a camera to the rear top bar of the frame. 
+
+This camera [link](https://www.aliexpress.com/item/1005005249688226.html)
+
+Mount for the camera is in /stls/extras/
+
+## Voice addition
+
+Since I've now for the spare PI installed, I decided to add some speach to the printer.
+
+I've added two small speakers (and a speaker pi-hat I had spare)...
+
+The speakers were simply hot glued in place...
+
+![Components](photos/PI.JPG)
+![Components](photos/SP1.JPG)
+![Components](photos/SP2.JPG)
+
+Text to speach is achieved using pipper (see this video 
+[link](https://www.youtube.com/watch?v=rjq5eZoWWSo_)
+ - although the installation method has changed somewhat since the video was made.
+ 
+ Here's the location of piper [link](https://github.com/OHF-Voice/piper1-gpl)
+ 
+ In short, the install command is
+ - pip install piper-tts  --break-system-packages
+ 
+ (Test without the break-system-packages option first, to see if it's required on your installation).
+ 
+ To get my audio amplifier working I had to do the following (thanks chatgpt)...
+
+Edit /boot/config.txt and add the line:
+
+   dtoverlay=audremap,pins_18_19
+
+and reboot
+
+
+
