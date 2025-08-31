@@ -34,6 +34,13 @@ Text to Speech is achieved using piper (see this video
  You can then add the speak dialect you'd like to use - using the instruction at 
  [link](https://github.com/OHF-Voice/piper1-gpl/blob/main/docs/CLI.md) - there's dozens of voices / languages to choose from.
  
+ Here's an example of loading the Voice en_GB-southern_english_female-low
+```
+ python3 -m piper.download_voices en_GB-southern_english_female-low
+```
+
+
+ 
  ### Audio pi hat
  
  To get my audio amplifier working I had to do the following (thanks chatgpt)...
@@ -47,6 +54,19 @@ and reboot
 ## Install this simple script
 
 Copy the file ttserver.py from the talkingserver folder to your pi (I copied it into my home folder).
+
+#### Change voice used in the script
+
+If you choose to load a different voice (from en_GB-southern_english_female-low), then you will need to edit the ttserver.py file as follows
+
+Edit ttserver.py and replace the language in line number 20 (for example to  en_GB-cori-high)
+
+```
+        "-m", "en_GB-southern_english_female-low",
+```  
+
+
+
 
 ### Test the talkingserver
 

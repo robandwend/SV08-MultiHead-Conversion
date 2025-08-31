@@ -28,6 +28,20 @@ The rear components for the SV08 modular dock can be found in the stl's folder.
 
 ![Components](photos/stealthchangercomponentsused-phone.jpg)
 
+## *NEW* Modular dock - improved rest
+
+I has now added a 2nd version of the dock components, implementing a better nozzle rest using a 5972k91 bearing (most common bearing used in many projects). This has been added to reduce nozzle 'dribble' whilst mounted. Two cut-down pen-springs are used to float the bearing.
+
+The backplane stl is not needed with this version, as it's incorporated into the base itself.
+
+![Components](photos/newrest6.JPG)
+![Components](photos/newrest1.JPG)
+![Components](photos/newrest2.JPG)
+![Components](photos/newrest3.JPG)
+![Components](photos/newrest4.JPG)
+![Components](photos/newrest5.JPG)
+
+
 ## Stealthchanger 
 
 ![Components](photos/IMG_4160-phone.JPG)
