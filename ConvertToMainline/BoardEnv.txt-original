@@ -1,0 +1,56 @@
+bootlogo=true
+overlay_prefix=sun50i-h616
+
+## 'sun50i-h616-biqu-sd' for CB1, 'sun50i-h616-biqu-emmc' for CB1 eMMC version
+fdtfile=sun50i-h616-biqu-sd
+
+## default 'display' for debug, 'serial' for /dev/ttyS0
+console=display
+
+## Specify HDMI output resolution (eg. extraargs=video=HDMI-A-1:800x480-24@60)
+#extraargs=video=HDMI-A-1:1024x600-24@60
+
+## uncomment for ws2812
+#overlays=ws2812
+
+## uncomment for i2c-gpio, pwm3, disable uart0 for pwm3
+#overlays=light
+
+## uncomment for TFT35_SPI screen
+#overlays=tft35_spi
+## tft35 rotate: 0, 90, 180, 270
+#param_tft35_spi_rotate=0
+
+## uncomment MCP2515 spi to canbus module
+#overlays=mcp2515
+
+## uncomment to release 'i2c0'(PI5/PI6) to user space
+#overlays=i2c0
+
+## uncomment to release 'spidev0.0' to user space
+#overlays=spidev0_0
+
+## uncomment to release 'spidev1.0' to user space
+#overlays=spidev1_0
+
+## uncomment to release 'spidev1.1' to user space
+#overlays=spidev1_1
+
+## uncomment to release 'spidev1.2' to user space
+#overlays=spidev1_2
+
+## uncomment to set 'PH10' for IR
+#overlays=ir
+
+## uncomment 'param_gpio_shutdown_pin' & 'param_gpio_shutdown_level' to enable gpio_shutdown feature
+## set the gpio of detect pin
+#param_gpio_shutdown_pin=PC7
+## shutdown level: 0=Falling, 1=Rising
+#param_gpio_shutdown_level=0
+
+## write the config after the 'overlays' and separate it with a space when multiple functions are enabled
+#overlays=disable_uart0 pwm ws2812 light tft35_spi mcp2515 i2c0 spidev0_0 spidev1_0 spidev1_1 spidev1_2 ir
+
+#------------------------------------------------#
+rootdev=UUID=795df55f-3e45-4625-a9cb-f6706b356274
+rootfstype=ext4
